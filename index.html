@@ -5,22 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة خط الاتجاه</title>
     <style>
-        /* كود لجعل الصورة تمتد على كامل الشاشة بدون حواف */
-        body, html { 
-            margin: 0; padding: 0; height: 100%; width: 100%; 
-            overflow: hidden; background-color: #000; 
-        }
-        .full-screen-image {
-            /* سيقوم هذا السطر بسحب ملف image.png المرفوع في مستودعك */
-            background-image: url("image.png");
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+        .bg { 
+            /* هذا السطر هو الذي سيسحب صورتك ويضعها في كامل الشاشة */
+            background: url("image.png") no-repeat center center/cover; 
             height: 100vh; width: 100vw; 
-            background-position: center; 
-            background-size: cover; 
-            background-repeat: no-repeat;
         }
     </style>
 </head>
-<body>
-    <div class="full-screen-image"></div>
-</body>
+<body><div class="bg"></div></body>
 </html>
